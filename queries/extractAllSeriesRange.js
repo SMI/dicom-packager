@@ -19,14 +19,10 @@ CONN.getDB(DB_NAME)
   })
   .forEach(function (doc) {
     // TODO(rkm 2020-10-27) Need to escape commas in some PatientIDs
-    print(
-      "" +
-        doc["PatientID"] +
-        "," +
-        doc["header"]["DirectoryPath"] +
-        "," +
-        doc["Modality"] +
-        "," +
-        doc["header"]["ImagesInSeries"]
-    )
+    s = ""
+    s += doc["PatientID"] + ","
+    s += doc["header"]["DirectoryPath"] + ","
+    s += doc["Modality"] + ","
+    s += doc["header"]["ImagesInSeries"]
+    print(s)
   })
