@@ -85,7 +85,7 @@ def main() -> int:
         "first_dir_list",
         type=Path,
         help=(
-            "First file to read a directory list from. Directories must be"
+            "First file to read a directory list from. Directories must be "
             "relative to the PACS root"
         ),
     )
@@ -93,7 +93,7 @@ def main() -> int:
         "second_dir_list",
         type=Path,
         help=(
-            "Second file to read a directory list from. Directories must be"
+            "Second file to read a directory list from. Directories must be "
             "relative to the PACS root"
         ),
     )
