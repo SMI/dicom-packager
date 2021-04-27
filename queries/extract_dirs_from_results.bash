@@ -13,6 +13,5 @@ input="$1"
 output="${input/proj_name/proj_name_dirs}"
 output="${output/csv/txt}"
 
-echo $input ">" $output
-cut -d',' $input -f2 | sed -n '1!p' > $output
-
+echo "$input > $output"
+cut -d',' "$input" -f2 | sed -n '1!p' > "$output"

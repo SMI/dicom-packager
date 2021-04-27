@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import datetime
 from pathlib import Path
 
@@ -19,5 +18,4 @@ for log in Path("logs").glob("*.log"):
     if not start or not end:
         print(log, "Incomplete log")
         continue
-    print(log, end-start)
-
+    print(log, end - start)

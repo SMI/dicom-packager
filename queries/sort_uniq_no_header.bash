@@ -15,4 +15,3 @@ output="${input/.txt/_uniq.txt}"
 echo "$input > $output"
 
 sort -u "$input" > "$output"
-

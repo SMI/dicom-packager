@@ -8,7 +8,7 @@ for date in \
         2011 \
         2012 \
         2013 \
-        # 2014 \
+        # 2014
         # 2015 \
         # 2016 \
         # 2017 \
@@ -20,6 +20,5 @@ do
         --quiet \
         --eval "const date=$date" \
         extractAllSeriesRange.js \
-        > results/all_${file_date}.csv
+        > results/all_"$file_date".csv
 done
-

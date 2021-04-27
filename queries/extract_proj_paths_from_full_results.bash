@@ -11,7 +11,7 @@ fi
 id_list="list.txt"
 
 if [ ! -f "$id_list" ]; then
-    echo "Erorr: ID list not found"
+    echo "Error: ID list not found"
     exit 1
 fi
 
@@ -20,12 +20,11 @@ set -ex
 input="$1"
 output="${input/all/proj_name}"
 
-echo $input ">" $output
+echo "$input > $output"
 
-head -n1 $input > $output
+head -n1 "$input" > "$output"
 
 grep \
     --file "$id_list" \
     --fixed-strings \
-    $input >> $output
-
+    "$input" >> "$output"
