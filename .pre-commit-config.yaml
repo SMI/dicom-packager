@@ -13,29 +13,26 @@ repos:
       - id: check-added-large-files
       - id: check-case-conflict
       - id: check-executables-have-shebangs
-      - id: check-json
+      # - id: check-json
       - id: check-merge-conflict
-      - id: check-toml
-      - id: check-xml
       - id: check-yaml
       - id: detect-private-key
       - id: end-of-file-fixer
       - id: mixed-line-ending
-      - id: pretty-format-json
-        args: [--autofix, --indent=4]
-      - id: sort-simple-yaml
+      # - id: pretty-format-json
+      #   args: [--autofix, --indent=4]
       - id: trailing-whitespace
       # Python
       - id: check-ast
       - id: check-builtin-literals
       - id: check-docstring-first
       - id: debug-statements
-      - id: name-tests-test
-      - id: requirements-txt-fixer
+      # - id: name-tests-test
+      # - id: requirements-txt-fixer
   # General
   - repo: meta
     hooks:
-      # - id: check-hooks-apply
+      - id: check-hooks-apply
       - id: check-useless-excludes
   - repo: https://github.com/codespell-project/codespell
     rev: "v2.0.0"
@@ -66,10 +63,10 @@ repos:
     hooks:
       - id: shellcheck
   # Python
-  - repo: https://github.com/asottile/setup-cfg-fmt
-    rev: "v1.17.0"
-    hooks:
-      - id: setup-cfg-fmt
+  # - repo: https://github.com/asottile/setup-cfg-fmt
+  #   rev: "v1.17.0"
+  #   hooks:
+  #     - id: setup-cfg-fmt
   - repo: https://github.com/pre-commit/pygrep-hooks
     rev: "v1.8.0"
     hooks:
