@@ -85,7 +85,7 @@ repos:
       - id: add-trailing-comma
         args: [--py36-plus]
   - repo: https://github.com/asottile/pyupgrade
-    rev: "v2.13.0"
+    rev: "v2.14.0"
     hooks:
       - id: pyupgrade
         args: [--py36-plus]
@@ -100,11 +100,11 @@ repos:
       - id: mypy
         args: [--config-file, .meta/mypy.ini]
   - repo: https://github.com/psf/black
-    rev: "21.4b1"
+    rev: "21.4b2"
     hooks:
       - id: black
         language_version: python38
-  - repo: https://gitlab.com/pycqa/flake8
+  - repo: https://github.com/PyCQA/flake8
     rev: "3.9.1"
     hooks:
       - id: flake8
