@@ -80,7 +80,7 @@ repos:
       - id: reorder-python-imports
         args: [--py36-plus]
   - repo: https://github.com/asottile/add-trailing-comma
-    rev: "v2.1.0"
+    rev: "v2.2.0"
     hooks:
       - id: add-trailing-comma
         args: [--py36-plus]
@@ -90,7 +90,7 @@ repos:
       - id: pyupgrade
         args: [--py36-plus]
   - repo: https://github.com/asottile/yesqa
-    rev: "v1.2.3"
+    rev: "v1.3.0"
     hooks:
       - id: yesqa
         additional_dependencies: [pep8-naming]
