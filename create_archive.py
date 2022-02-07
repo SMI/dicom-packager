@@ -51,7 +51,7 @@ def _log_disk_usage(input_files: Tuple[Path]) -> None:
 
     escaped_root = str(PACS_ROOT).replace("/", r"\/")
     cmd = (
-        fr"sed 's/^/{escaped_root}\//g' {' '.join((str(x) for x in input_files))} "
+        rf"sed 's/^/{escaped_root}\//g' {' '.join((str(x) for x in input_files))} "
         r"| xargs -s2091735 -d \\n du -sch"
     )
 
