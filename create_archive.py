@@ -48,7 +48,6 @@ _EXPECTED_FILE_NAME_LENGTH = 35
 
 
 def _log_disk_usage(input_files: Tuple[Path]) -> None:
-
     escaped_root = str(PACS_ROOT).replace("/", r"\/")
     cmd = (
         rf"sed 's/^/{escaped_root}\//g' {' '.join((str(x) for x in input_files))} "
@@ -72,7 +71,6 @@ def _log_disk_usage(input_files: Tuple[Path]) -> None:
 
 
 def main() -> int:
-
     logging.info(f"Starting on {os.uname()[1]}")
 
     parser = argparse.ArgumentParser()
