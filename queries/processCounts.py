@@ -29,7 +29,6 @@ def process_csv(csv_path: Path) -> Counter[str]:
 
 
 def main() -> int:
-
     totals: Counter[str] = Counter()
     for f in sorted(glob.glob("results/proj_name_*.csv")):
         totals += Counter(process_csv(Path(f)))
